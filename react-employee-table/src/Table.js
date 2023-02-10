@@ -140,3 +140,7 @@ export const Table = ({ columns, rows }) => {
     </>
   );
 };
+
+
+
+

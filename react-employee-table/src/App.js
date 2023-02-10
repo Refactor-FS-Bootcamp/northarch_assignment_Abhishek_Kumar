@@ -254,7 +254,6 @@ export default function App() {
             designation: "Actress",
             salary: 90000,
             },
-    
   ];
 
   return (
@@ -262,10 +261,120 @@ export default function App() {
       <h1>React Employee Table</h1>
       <br />
       <Table rows={rows} columns={columns}/>
-      
-
-     
     </div>
   );
 }
+
+
+
+
+
+
+// import { useState } from "react";
+// import "./styles.css";
+
+// import { Table } from "./Table";
+
+// export default function App() {
+//   const [columns, setColumns] = useState([
+//     { accessor: "sno", label: "S.No" },
+//     { accessor: "name", label: "Name" },
+//     { accessor: "age", label: "Age" },
+//     { accessor: "start_date", label: "Join Date" },
+//     { accessor: "designation", label: "Designation" },
+//     { accessor: "salary", label: "Salary" },
+//     { accessor: "actions", label: "Actions" },
+//   ]);
+
+//   const [rows, setRows] = useState([
+//     {
+//       sno: 1,
+//       name: "Liz Lemon",
+//       age: 36,
+//       start_date: "02-28-1999",
+//       designation: "Full Stack Developer",
+//       salary: 50000,
+//       actions: null,
+//     },
+//     {
+//       sno: 2,
+//       name: "Jack Donaghy",
+//       age: 40,
+//       start_date: "03-05-1997",
+//       designation: "Backend Developer",
+//       salary: 55000,
+//       actions: null,
+//     },
+//     {
+//       sno: 3,
+//       name: "Tracy Morgan",
+//       age: 39,
+//       start_date: "07-12-2002",
+//       designation: "Graphic Designer",
+//       salary: 75000,
+//       actions: null,
+//     },
+//     {
+//       sno: 4,
+//       name: "Jenna Maroney",
+//       age: 40,
+//       start_date: "02-28-1999",
+//       designation: "Developer",
+//       salary: 65000,
+//       actions: null,
+//     }
+//   ]);
+
+//   const handleDeleteRow = (index) => {
+//     const newRows = [...rows];
+//     newRows.splice(index, 1);
+//     setRows(newRows);
+//   };
+
+//   const handleEditRow = (index) => {
+//     const newRows = [...rows];
+//     newRows[index].editing = true;
+//     setRows(newRows);
+//   };
+
+//   const handleSaveRow = (index) => {
+//     const newRows = [...rows];
+//     newRows[index].editing = false;
+//     setRows(newRows);
+//   };
+
+//   const handleCancelEdit = (index) => {
+//     const newRows = [...rows];
+//     newRows[index].editing = false;
+//     setRows(newRows);
+//   };
+
+//   return (
+//     <div className="App">
+//       <h1>React Employee Table</h1>
+//       <br />
+//       <Table
+//         rows={rows}
+//         columns={columns}
+//         handleDeleteRow={handleDeleteRow}
+//         handleEditRow={handleEditRow}
+//         handleSaveRow={handleSaveRow}
+//         handleCancelEdit={handleCancelEdit}
+//       />
+//     </div>
+//   );
+// }
+
+     
+
+
+
+
+
+
+
+    
+
+
+
 
